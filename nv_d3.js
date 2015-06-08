@@ -5,10 +5,6 @@ if (Meteor.isClient) {
       return Session.get('serverSimpleResponse');
     }
   });
-  
-  Template.nvd3.onRendered(function () {
-
-  });
 
   Template.nvd3.events({
     'click button': function () {
