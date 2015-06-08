@@ -1,0 +1,19 @@
+<head>
+  <title>d3</title>
+</head>
+
+<body>
+
+  {{> nvd3}}
+
+</body>
+
+<template name="nvd3">
+  <h3>Top cities <button>aggregate</button></h3>
+  {{#each doc}}
+    {{city}} {{pop}}
+  {{/each}}
+  <div id="chart1">
+    <svg></svg>
+  </div>
+</template>
